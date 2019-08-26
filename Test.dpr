@@ -1,20 +1,20 @@
-program Test;
+program test;
 
 uses
   Vcl.Forms,
-  Utest1 in 'Utest1.pas' {Form1},
+  utest1 in 'utest1.pas' {Form1},
+  utest2 in 'utest2.pas' {Form2},
+  utest3 in 'utest3.pas' {Form3},
   utest4 in 'utest4.pas',
-  uTest3 in 'uTest3.pas' {Form3},
   Vcl.Themes,
-  Vcl.Styles,
-  uTest2 in 'uTest2.pas' {Form2};
+  Vcl.Styles;
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  TStyleManager.TrySetStyle('Auric');
+  TStyleManager.TrySetStyle('Silver');
   Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
